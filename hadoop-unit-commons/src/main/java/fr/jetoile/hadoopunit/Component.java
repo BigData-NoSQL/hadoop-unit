@@ -34,7 +34,10 @@ public enum Component {
     ELASTICSEARCH("elasticsearch", "fr.jetoile.hadoopunit.component.ElasticSearchBootstrap", "elasticsearch.artifact"),
     NEO4J("neo4j", "fr.jetoile.hadoopunit.component.Neo4jBootstrap", "neo4j.artifact"),
     KNOX("knox", "fr.jetoile.hadoopunit.component.KnoxBootstrap", "knox.artifact"),
-    REDIS("redis", "fr.jetoile.hadoopunit.component.RedisBootstrap", "redis.artifact");
+    REDIS("redis", "fr.jetoile.hadoopunit.component.RedisBootstrap", "redis.artifact"),
+    CONFLUENT_KAFKA("confluent", "fr.jetoile.hadoopunit.component.ConfluentKafkaBootstrap", "confluent.kafka.artifact"),
+    CONFLUENT_SCHEMAREGISTRY("confluent", "fr.jetoile.hadoopunit.component.ConfluentSchemaRegistryBootstrap", "confluent.schemaregistry.artifact"),
+    CONFLUENT_KAFKA_REST("confluent", "fr.jetoile.hadoopunit.component.ConfluentKafkaRestBootstrap", "confluent.kafka_rest.artifact");
 
     private String key;
     private String mainClass;
